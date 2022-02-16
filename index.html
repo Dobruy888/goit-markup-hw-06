@@ -404,7 +404,6 @@
             </ul>
           </address>
         </div>
-
         <div class="footer-info-flex">
           <h3 class="footer-title">ПРИСОЕДИНЯЙТЕСЬ</h3>
           <ul class="social-team-list">
@@ -438,35 +437,38 @@
         <div class="footer-form">
           <h3 class="footer-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h3>
           <form class="footer-form">
-          <div class="brim-modal footer-form-flex">
+            <div class="brim-modal footer-form-flex">
               <input
-              type="email"
-              class="footer-input"
-              name="email"
-              required
+                type="email"
+                class="footer-input"
+                name="email"
+                required
                 title=""
-              placeholder="E-mail"
-              id="user-email"
-            />
-             <button type="submit" class="hero-button footer-btn" >Подписаться<svg class="icon-send" width="24" height="24">
-                <use href="./images/svgsprite/symbol-defs.svg#icon-send"></use>
-              </svg></button>
-            </form>
+                placeholder="E-mail"
+                id="user-email-footer"
+              />
+              <button type="submit" class="hero-button footer-btn">
+                Подписаться<svg class="icon-send" width="24" height="24">
+                  <use href="./images/svgsprite/symbol-defs.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </footer>
-    
-    <!-- Модальное окно -->
 
+    <!-- Модальное окно -->
     <div data-modal class="backdrop is-hidden">
       <div class="modal">
-        <button data-modal-close type="button" class="close-modal">
-          <svg class="button-x" width="18" height="18">
-            <use href="./images/svgsprite/symbol-defs.svg#icon-x"></use>
-          </svg>
-        </button>
-        <p class="modal-p">Оставьте свои данные, мы вам перезвоним</p>
-        <form>
+        <form class="">
+          <button data-modal-close type="button" class="close-modal">
+            <svg class="button-x" width="18" height="18">
+              <use href="./images/svgsprite/symbol-defs.svg#icon-x"></use>
+            </svg>
+          </button>
+          <p class="modal-p">Оставьте свои данные, мы вам перезвоним</p>
+
           <div class="brim-modal">
             <label class="modal-label" for="user-name">Имя</label>
             <div class="box-input">
@@ -493,7 +495,6 @@
               </svg>
             </div>
           </div>
-
           <div class="brim-modal">
             <label class="modal-label" for="user-email">Почта</label>
             <div class="box-input">
@@ -514,33 +515,28 @@
           <div class="brim-modal comment">
             <label class="modal-label" for="user-text">Комментарий</label>
             <div class="box-input">
-            <textarea
-              name="user-text"
-              id="user-text"
-              class="modal-text"
-              placeholder="Введите текст"
-            ></textarea>
-         </div>
+              <textarea
+                name="user-text"
+                id="user-text"
+                class="modal-text"
+                placeholder="Введите текст"
+              ></textarea>
+            </div>
           </div>
           <div class="conditions">
-            <input
-              type="checkbox"
-              name="policy"
-              id="policy"
-              class="modal-check visually-hidden"
-            />
+            <input type="checkbox" name="policy" id="policy" class="modal-check visually-hidden" />
             <label for="policy" class="modal-check-text">
               <span>
                 <svg class="check-icon" width="16" height="15">
                   <use href="./images/svgsprite/symbol-defs.svg#icon-check1"></use>
                 </svg>
               </span>
-             Соглашаюсь с рассылкой и принимаю&nbsp<a href=""class="">Условия договора</a> </label>
-            
+              Соглашаюсь с рассылкой и принимаю&nbsp; <a href="" class="">Условия договора</a>
+            </label>
             <button type="submit" class="hero-button">Отправить</button>
-             </div>
           </div>
         </form>
+      </div>
     </div>
     <script src="./js/modal.js"></script>
   </body>
