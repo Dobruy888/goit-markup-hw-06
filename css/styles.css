@@ -815,7 +815,7 @@ body {
   padding-right: 16px;
   padding-left: 16px;
   resize: none;
-  color: rgba(117, 117, 117, 0.5);
+  color: var(--primary-text-color);
 }
 
 .modal-input::placeholder {
