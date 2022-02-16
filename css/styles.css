@@ -39,6 +39,7 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 .link {
+  z-index: 2;
   text-decoration: none;
 }
 /* Шапка сайта */
@@ -798,9 +799,9 @@ body {
   outline: none;
   cursor: pointer;
   width: 100%;
-  height: 45px;
+  height: 40px;
   border-radius: 5px;
-  border: 1px solid #757575;
+  border: 1px solid rgba(33, 33, 33, 0.2);
   background-color: transparent;
   padding-left: 30px;
   padding-right: 10px;
@@ -857,6 +858,9 @@ body {
   border: 2px solid #303030;
   border-radius: 2px;
   margin-right: 5px;
+}
+.conditions-link:visited {
+  color: var(--accent-color);
 }
 
 .modal-check:checked + .modal-check-text span {
